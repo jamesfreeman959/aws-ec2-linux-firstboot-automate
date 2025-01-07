@@ -1,0 +1,12 @@
+---
+ami_id: "ami-xxxxx"
+instance_type: "t4g.nano"
+key_name: "my-ec2-key-name"
+security_group_ids:
+  - "sg-xxxxxx"
+subnet_id: "subnet-xxxxxx"
+aws_profile: "my-aws-profile"
+serial_console_endpoint: "serial-console.ec2-instance-connect.eu-central-1.aws"
+# SSH username and key path (to write private key to)
+private_key_file_path: "/home/user/key.pem"
+kernel_arguments: "isolcpus=1"
